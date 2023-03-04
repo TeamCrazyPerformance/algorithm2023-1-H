@@ -7,13 +7,13 @@
 
 ### 참여 인원
 
-- 박지훈
-- 전효정
-- 이형진
-- 최승훈
-- 안태우
-- 김다은
-- 이정현
+- [박지훈](https://www.acmicpc.net/user/pianop)
+- [전효정](https://www.acmicpc.net/user/junnie082)
+- [이형진](https://www.acmicpc.net/user/lhjin0j)
+- [최승훈](https://www.acmicpc.net/user/hoonwin02)
+- [안태우](https://www.acmicpc.net/user/atw13730)
+- [김다은](https://www.acmicpc.net/user/kimda)
+- [이정현](https://www.acmicpc.net/user/vndtjs0915)
 
 ### 알고리즘 공부용 추천 영상, 블로그
 [바킹독 유튜브](https://youtube.com/playlist?list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY)  
