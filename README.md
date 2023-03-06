@@ -4,7 +4,7 @@
 
 1. 심화반 스터디는 비대면으로 진행됩니다.
 1. 매주 다음에 배울 주제를 선택한 후 [Issue](https://github.com/TeamCrazyPerformance/algorithm2023-1-H/issues)에 해당하는 주제와 관련된 공부 자료(주로 블로그 링크)와 백준 or 프로그래머스 문제들이 올라갑니다, 각자 해당 알고리즘을 공부 한 후 문제를 풀어 자신의 폴더에 코드를 올려주시면 됩니다. 
-1. [주차별 참여 현황](https://github.com/TeamCrazyPerformance/algorithm2023-1-H/wiki/%EB%A9%A4%EB%B2%84-%EC%A3%BC%EC%B0%A8%EB%B3%84-%EC%B0%B8%EC%97%AC-%ED%98%84%ED%99%A9)은 Wiki에 올라갑니다.
+1. [주차별 참여 현황](https://github.com/TeamCrazyPerformance/algorithm2023-1-H/wiki/%EC%A3%BC%EC%B0%A8%EB%B3%84-%EB%A9%A4%EB%B2%84-%EC%B0%B8%EC%97%AC-%ED%98%84%ED%99%A9)은 Wiki에 올라갑니다.
 1. 질문은 톡방이나 Disscussions에 올려주시면 됩니다.
 
 ### 참여 인원
