@@ -13,7 +13,6 @@
 - [전효정](https://www.acmicpc.net/user/junnie082)
 - [이형진](https://www.acmicpc.net/user/lhjin0j)
 - [최승훈](https://www.acmicpc.net/user/hoonwin02)
-- [안태우](https://www.acmicpc.net/user/atw13730)
 - [김다은](https://www.acmicpc.net/user/kimda)
 - [이정현](https://www.acmicpc.net/user/vndtjs0915)
 
