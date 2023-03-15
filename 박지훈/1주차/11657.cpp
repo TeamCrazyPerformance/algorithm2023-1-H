@@ -65,16 +65,16 @@ private:
 
 		for (int i = 1; i < mV; i++)
 		{
-			for (int i = 1; i <= mV; i++)
+			for (int j = 1; j <= mV; j++)
 			{
-				if (dist[i] == INF)
+				if (dist[j] == INF)
 				{
 					continue;
 				}
 
-				for (auto [next, cost] : mEdges[i])
+				for (auto [next, cost] : mEdges[j])
 				{
-					auto newDist = dist[i] + cost;
+					auto newDist = dist[j] + cost;
 					if (newDist < dist[next])
 					{
 						dist[next] = newDist;
@@ -107,7 +107,7 @@ private:
 	}
 
 private:
-	vector<vector<pii>> mEdges; // mEdges[Ãâ¹ß Á¤Á¡] = { µµÂø Á¤Á¡, °Å¸® }
+	vector<vector<pii>> mEdges; // mEdges[ÃƒÃ¢Â¹ÃŸ ÃÂ¤ÃÂ¡] = { ÂµÂµÃ‚Ã¸ ÃÂ¤ÃÂ¡, Â°Ã…Â¸Â® }
 	int mV, mS;
 };
 
