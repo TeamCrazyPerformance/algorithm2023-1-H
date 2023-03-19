@@ -1,4 +1,4 @@
-*/.cache
-*/build
-*/CMakeLists.txt
+*/*/.cache
+*/*/build
+*/*/CMakeLists.txt
 .DS_Store
