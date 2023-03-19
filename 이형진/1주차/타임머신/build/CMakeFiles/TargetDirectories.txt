@@ -1,3 +1,0 @@
-/Users/ihyeongjin/Documents/TCP/algorithm2023-1-H/이형진/타임머신/build/CMakeFiles/output.dir
-/Users/ihyeongjin/Documents/TCP/algorithm2023-1-H/이형진/타임머신/build/CMakeFiles/edit_cache.dir
-/Users/ihyeongjin/Documents/TCP/algorithm2023-1-H/이형진/타임머신/build/CMakeFiles/rebuild_cache.dir

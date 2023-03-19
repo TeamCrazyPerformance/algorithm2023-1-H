@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/ihyeongjin/documents/TCP/algorithm2023-1-H/이형진/특정한최단경로/build",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/ihyeongjin/Documents/c++/include  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -g -Wall -std=gnu++17 -o CMakeFiles/output.dir/main.cpp.o -c /Users/ihyeongjin/documents/TCP/algorithm2023-1-H/이형진/특정한최단경로/main.cpp",
-  "file": "/Users/ihyeongjin/documents/TCP/algorithm2023-1-H/이형진/특정한최단경로/main.cpp"
-}
-]
