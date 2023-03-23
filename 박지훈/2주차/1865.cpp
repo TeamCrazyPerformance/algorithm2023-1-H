@@ -7,7 +7,7 @@ using namespace std;
 typedef pair<int, int> pii;
 typedef vector <long long > vl;
 
-const int INF = (long long)1e10;
+const int INF = (long long)1e8;
 
 
 class Q
@@ -20,24 +20,13 @@ public:
 
 	void Solve()
 	{
-		vl dist = bellmanFord();
-		if (isCycle(dist))
+		if (bellmanFord())
 		{
-			cout << "-1";
+			cout << "YES\n";
 		}
 		else
 		{
-			for (int i = 2; i <= mV; i++)
-			{
-				if (dist[i] >= INF)
-				{
-					cout << "-1\n";
-				}
-				else
-				{
-					cout << dist[i] << "\n";
-				}
-			}
+			cout << "NO\n";
 		}
 	}
 
@@ -45,8 +34,8 @@ public:
 private:
 	void init()
 	{
-		int e;
-		cin >> mV >> e;
+		int e, w;
+		cin >> mV >> e >> w;
 
 		mEdges.resize(mV + 1);
 		int a, b, cost;
@@ -54,11 +43,17 @@ private:
 		{
 			cin >> a >> b >> cost;
 			mEdges[a].push_back({ b,cost });
+			mEdges[b].push_back({ a,cost });
 		}
 
+		while (w--)
+		{
+			cin >> a >> b >> cost;
+			mEdges[a].push_back({ b, -cost });
+		}
 	}
 
-	vl bellmanFord()
+	bool bellmanFord()
 	{
 		vl dist(mV + 1, INF);
 		dist[1] = 0;
@@ -67,11 +62,6 @@ private:
 		{
 			for (int j = 1; j <= mV; j++)
 			{
-				if (dist[j] == INF)
-				{
-					continue;
-				}
-
 				for (auto [next, cost] : mEdges[j])
 				{
 					auto newDist = dist[j] + cost;
@@ -83,16 +73,13 @@ private:
 			}
 		}
 
-		return dist;
+		return isCycle(dist);
 	}
 
-	bool isCycle(vl dist)
+	bool isCycle(vl& dist)
 	{
 		for (int i = 1; i <= mV; i++)
 		{
-			if (dist[i] == INF)
-				continue;
-
 			for (auto [next, cost] : mEdges[i])
 			{
 				auto newDist = dist[i] + cost;
@@ -107,7 +94,7 @@ private:
 	}
 
 private:
-	vector<vector<pii>> mEdges; // mEdges[Ãâ¹ß Á¤Á¡] = { µµÂø Á¤Á¡, °Å¸® }
+	vector<vector<pii>> mEdges; // mEdges[출발 정점] = { 도착 정점, 거리 }
 	int mV, mS;
 };
 
@@ -117,8 +104,8 @@ int main()
 	fastio;
 
 	int T;
-	T = 1;
-	//cin >> T;
+	//T = 1;
+	cin >> T;
 
 	while (T--)
 	{
