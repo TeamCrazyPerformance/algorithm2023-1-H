@@ -1,9 +1,8 @@
 // C++20
+	// C++20
 #include <iostream>
 #include <vector>
-#include <algorithm>
-#include <queue>
-#include <map>
+#include <unordered_map>
 using namespace std;
 #define fastio cin.tie(0)->sync_with_stdio(0);
 typedef unsigned int u_int;
@@ -24,7 +23,7 @@ public:
 
 	void Solve()
 	{
-		map<int, int> sushiInRange;
+		unordered_map<int, int> sushiInRange;
 		for (int i = 0; i < mK; i++)
 		{
 			if (!sushiInRange.insert({ mBelt[i], 1 }).second)
