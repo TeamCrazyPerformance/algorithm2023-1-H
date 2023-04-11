@@ -13,8 +13,7 @@ int main() {
 	}
 	int tmp = arr[0];
 	while (tmp < s) {
-		right++;
-		tmp += arr[right];
+		tmp += arr[++right];
 		count++;
 		if (arr[right] == 0) {
 			count = 0;
@@ -24,15 +23,13 @@ int main() {
 	int count_min = count;
 	while (arr[right] != 0) {
 		for (; tmp - arr[left] >= s;) {
-			tmp -= arr[left];
-			left++;
+			tmp -= arr[left++];
 			count--;
 		}
 		if (count < count_min) {
 			count_min = count;
 		}
-		right++;
-		tmp += arr[right];
+		tmp += arr[++right];
 		count++;
 	}
 	printf("%d", count_min);
