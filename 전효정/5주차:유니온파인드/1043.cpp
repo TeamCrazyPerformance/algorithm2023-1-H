@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-using namespace std; 
+using name1space std; 
 
 int parents[51]; 
 int truthTable[51];
@@ -83,7 +83,8 @@ int main()
 			}
 		}
 		if (flag) {
-			for (int j = 0; j < priority[i].first; j++) {  // priority[i].first (인원수) 만큼 돌아야 하는데, prioirty[i].second (파티넘버) 만큼 돌고 있어서 에러난듯. 
+			for (int j = 0; j < priority[i].first; j++) {  
+				// priority[i].first (인원수) 만큼 돌아야 하는데, prioirty[i].second (파티넘버) 만큼 돌고 있어서 에러난듯. 
 				parents[members[priority[i].second][j]] = 0; 
 			}
 		} 
