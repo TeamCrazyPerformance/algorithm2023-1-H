@@ -44,6 +44,5 @@ int main()
 		}
 		Union(a, b); 
 	}
-
 	cout << result; 
 }
