@@ -60,6 +60,6 @@ int main()
 		}
 
 		sort(mst.begin(), mst.end());
-		cout << kruskal(); 
+		cout << kruskal() << "\n"; 
 	}
 }
