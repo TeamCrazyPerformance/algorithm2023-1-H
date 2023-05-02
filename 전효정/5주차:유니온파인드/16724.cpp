@@ -57,16 +57,6 @@ int main()
 	}
 
 	// result. 
-	// int root; 
-	// for (int i = 1; i <= N; i++) {
-	// 	for (int j = 1; j <= M; j++) {
-	// 		root = Find(rootTable[(i-1) * M + j]);
-	// 		isRoot[root] = 1; 
-	// 	}
-	// }
-
-
-
 	int count = 0; 
 	rootTable[1] = 1; 
 	for (int i = 1; i <= N*M; i++) {
