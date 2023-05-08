@@ -1,0 +1,35 @@
+import sys
+input = sys.stdin.readline
+sys.setrecursionlimit(10**7)
+
+def find(parents, x):
+    if parents[x] != x:
+        parents[x] = find(parents, parents[x])
+    return parents[x]
+
+def union(parents, a, b):
+    a = find(parents, a)
+    b = find(parents, b)
+    if a < b:
+        parents[b] = a
+    else:
+        parents[a] = b
+
+n, m = list(map(int,input().split()))
+parents = [i for i in range(n+1)]
+
+for i in range(m):
+    instruct, a, b = list(map(int, input().split()))
+    if instruct == 1 and a == b:
+        print("yes")
+        continue
+    elif instruct == 0 and a == b:
+        continue
+            
+    if instruct == 0:
+        union(parents, a,b)
+    else:
+        if find(parents,a) == find(parents,b):
+            print("yes")
+        else:
+            print("no")
